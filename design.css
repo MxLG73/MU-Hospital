@@ -424,7 +424,7 @@ footer .wave-g {
     left: 0;
     width: 100%;
     height: 70px;
-    background: url(../Pics/wave-g.png);
+    background: url(Pics/wave-g.png);
     background-size: 1000px 70px;
     background-color: none;
 }
@@ -435,14 +435,14 @@ footer .wave-w {
     left: 0;
     width: 100%;
     height: 70px;
-    background: url(../Pics/wave-w.png);
+    background: url(Pics/wave-w.png);
     background-size: 1000px 70px;
 }
 
 .wave-b {
     width: 100%;
     height: 50px;
-    background: var(--main) url(../Pics/wave-b.png);
+    background: var(--main) url(Pics/wave-b.png);
     background-size: 1000px 50px;
 }
 
