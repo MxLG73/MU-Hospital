@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="design.css">
+    <link rel="icon" href="Pics/logo.png">
+    <title>MU Hospital</title>
+</head>
+<body class="fix">
+
+<div id="blur">  
+    <div class="top">
+        <header class="nav">
+            <a href="#" onclick="toggle_newt()"><svg class="cart" width="64px" height="64px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#000000" d="M640 832H64V640a128 128 0 1 0 0-256V192h576v160h64V192h256v192a128 128 0 1 0 0 256v192H704V672h-64v160zm0-416v192h64V416h-64z"></path></g></svg></a>
+            <nav>
+                <ul class="home">
+                    <li>
+                        <a href="#" class="home-link">مستشفى المشرق</a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="Pics/logo.png" class="logoo" alt="logo">
+        </header>
+    </div>
+<div class="wave-b" id="wave0"></div>
+
+<!-- -------------------------------------------------------------------------------- -->
+
+<div class="intro">
+    <div class="show">
+        <div class="hospital"><img src="Pics/med.png" alt="hospital"></div>
+        <div class="about"><p>مرحباً بك في موقع المستشفى الإلكتروني، حيث تجد كل ما تحتاجه للحصول على خدمات صحية عالية الجودة والرعاية الطبية المميزة. يسعدنا أن نقدم لك تجربة شاملة ومميزة من خلال موقعنا الذي يوفر لك الخدمات الضرورية والمحدثة بانتظام، والتي تساعدك على اتخاذ القرارات الصحية المناسبة. نتمنى لك إقامة مريحة وإيجابية في موقعنا الإلكتروني</p></div>
+    </div>
+</div>
+
+<div class="us">
+    <div class="cards">خدمات سريعة و حجوزات فورية</div>
+    <div class="cards">اول مستشفى تستخدم نظام الحجز عن بعد في السودان</div>
+    <div class="cards">متابعة الحجز عن بعد و معرفة حالة الحجز</div>
+</div>
+
+<div class="available">
+    <div class="title">حجوزات</div>
+    <div class="card">
+        <a href="list.php" onclick="toggle_view"><div class="box">
+            <span></span>
+            <div class="content">
+              <h2>متابعة الحجز</h2>
+            </div>
+        </div></a>
+        <a href="#/" onclick="toggle_newt()"><div class="box">
+            <span></span>
+            <div class="content">
+              <h2>حجز جديد</h2>
+            </div>
+        </div></a>
+    </div>
+</div>
+
+<!-- -------------------------------------------------------------------------------- -->
+
+<br><br><br><br>
+    <footer class="foot">
+        <div class="waves">
+            <div class="wave-g" id="wave1"></div>
+            <div class="wave-w" id="wave2"></div>
+            <div class="wave-g" id="wave3"></div>
+            <div class="wave-w" id="wave4"></div>
+        </div>
+        <ul class="redi">
+            <li class="redil"><a class="fixb" href="#/" onclick="toggles()">التواصل معنا</a></li>
+            <li class="redil"><a class="fixb" href="#/" onclick="toggleh()">كيفية الحجز</a></li>
+        </ul>
+        <hr class="break">
+        <p class="copyright">© جميع الحقوق محفوظة لدى : محمد حاتم محمد | 2023</p>
+        </footer>
+</div>  
+
+<!-- -------------------------------------------------------------------------------- -->
+
+        <div id="newt">
+            <a href="#/" onclick="toggle_newt()" class="page_ret"><button class="page_return">X</button></a>
+            <form method="post" action="ticket.php">
+            <label class="label">الاسم الرباعي</label><input type="text" name="Name" id="name" class="input" pattern="[أ-ي\s]{15,}" title="الرجاء ادخال الاسم رباعي بالعربي" required><br>
+            <label class="label">العمر</label><input type="number" name="Age" id="age" class="input" required><br>
+            <label class="label">السكن</label><input type="text" name="Address" id="address" class="input" required><br>
+            <label class="label">رقم الهاتف</label><input type="number" name="Phone" id="phone" class="input" required><br>
+            <button type="submit" class="submit">حجز</button>
+         </form>
+        </div>
+
+        <div id="social">
+            <a href="#/" onclick="toggles()" class="page_ret"><button class="page_return">X</button></a>
+            <p>رقم الاستقبال : 0900000000</p>
+            <p>رقم الدعم الفني : 0900000000</p>
+            <p>صفحتنا على الفيس بوك : مستشفى المشرق</p>
+            <p>mashreqhospital@unknown.com : ايميل المستشفى</p>
+            <br>
+        </div>
+
+        <div id="how">
+            <a href="#/" onclick="toggleh()" class="page_ret"><button class="page_return">X</button></a>
+            <p>الضغط على حجز جديد</p>
+            <p>ادخل البيانات المطلوبة</p>
+            <p>الانتقال لصفحة متابعة الحجز</p>
+            <p>الانتظار عندما يقترب دورك</p>
+            <p>سيتم مناداة صاحب الدور الحالي</p>
+            <p>عند سماع اسمك الرجاء التوجه الاستقبال و سداد الرسوم</p>
+            <p>اذا لم تحضر خلال دقيقة سيتم الغاء حجزك و الانتقال للاتي</p>
+        </div>
+<script src="javascript.js"></script>
+</body>
+</html>
